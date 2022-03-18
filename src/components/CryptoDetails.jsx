@@ -61,7 +61,7 @@ function CryptoDetails() {
       icon: <DollarCircleOutlined />,
     },
     {
-      title: "All-time-high(daily avg.)",
+      title: "All-time-high",
       value: `$ ${
         cryptoDetails?.allTimeHigh?.price &&
         millify(cryptoDetails?.allTimeHigh?.price)
@@ -82,7 +82,7 @@ function CryptoDetails() {
       icon: <MoneyCollectOutlined />,
     },
     {
-      title: "Aprroved Supply",
+      title: "Approved Supply",
       value: cryptoDetails?.supply?.confirmed ? (
         <CheckOutlined />
       ) : (
